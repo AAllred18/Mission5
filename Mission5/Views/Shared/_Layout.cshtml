@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <meta charset="utf-8" />
+    <!--A title on the tab of the web page-->
+    <title>Mission 5</title>
+    <!--A custom icon next to the title on the web page (#notcoveredinthevideos)-->
+    <link rel="icon" type="image/png" href="~/assets/woodgrain_icon.ico" />
+    <link href="~/css/site.css" rel="stylesheet" />
+</head>
+<body>
+
+    <!--Navigation -->
+    <header>
+        <!-- Logo and Title on the left -->
+        <div class="logo-container">
+            <img src="~/assets/woodgrain_icon.ico" alt="Website Icon">
+            <h1>Woodworking</h1>
+        </div>
+
+        <!-- Navigation Links (centered) -->
+        <nav>
+            <a asp-controller="Home" asp-action="Index">Home</a>
+            <a asp-controller="Home" asp-action="Services">Services</a>
+        </nav>
+    </header>
+
+    <div>
+        @RenderBody()
+    </div>
+
+    <!--A footer on the page that has a copyright and info about who built the page (#notcoveredinthevideos)-->
+    <div class="footer">
+        <div class="aligncenter">
+            Copyright &copy; Andrew Allred
+            <script type="text/javascript">document.write(new Date().getFullYear());</script>
+            <p>Page built by Andrew Allred</p>
+        </div>
+    </div>
+
+    <!-- Include js here when created-->
+    <script src="~/lib/jquery/jquery.min.js"></script>
+    <script src="~/js/site.js"></script>
+
+</body>
+</html>

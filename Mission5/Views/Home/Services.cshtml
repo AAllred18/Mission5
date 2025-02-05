@@ -1,0 +1,35 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewData["Title"] = "Services";
+}
+
+    <!--A heading that introduces your site-->
+    <h1> Services </h1>
+
+    <p style="margin-left: 20%; margin-right: 20%">
+    I am available to work on woodworking projects tailored to your needs, from custom furniture to home decor. 
+    I charge a flat rate of $25 per hour for my services. 
+    Use the calculator below to estimate the total cost of your project based on the number of hours you need assistance.
+    </p>
+
+
+<div class="container">
+    <label for="hours">Enter the number of hours:</label>
+    <input type="text" id="hours" class="input-field" placeholder="Enter hours">
+
+    <label for="rate">Hourly Rate:</label>
+    <input type="text" id="rate" class="input-field" value="25" readonly> <!-- Non-editable box showing rate -->
+    
+
+    <div class="button-container">
+        <button class="button" id="calculateBtn">Calculate Total</button>
+    </div>
+
+
+    <div>
+        <label for="total">Total Cost:</label>
+        <input type="text" id="total" class="output-box" readonly> <!-- Output box for total -->
+    </div>
+</div>
